@@ -43,21 +43,27 @@ Dans cette étape on collecte nos données brutes, en passant par:
 1. La récupération du dataset des villes marocaines.
 2. L'utilisation des coordonnées des villes pour interroger l'API Open-Meteo.
 3. La récupération des prévisions météorologiques quotidiennes des trois prochains jours.
-4. La conservation des données brutes dans bronze/.
+4. La conservation des données brutes dans `bronze/`.
 
 Durant cette étape, on doit veiller aux erreurs lors des appels API telles que : timeout, erreurs HTTP, réponses invalides, etc.
 
 ## Étape 2 — Nettoyage / Silver
-Dans cette étapes on nettoient nos données brutes, en passant par:
-1. La standardisation des types et des dates:
-    * aplatir les dicts en types normals.
-    * inspecter les types via .dtypes.
-    * corriger les types éronnés.
-2. Le contrôle de la qualité des données par:
-    * vérification et suppression des doublants.
-    * vérification et correction des types des données.
-    * vérification des valeurs manquantes.
-3. La conservation des données nettoyées dans silver/.
+Dans cette étape, nous nettoyons et structurons les données brutes en passant par les étapes suivantes :
+1. **Standardisation des types et des dates :**
+   * Aplatir les dictionnaires afin d'obtenir des colonnes et des valeurs structurées.
+   * Inspecter les types de données à l'aide de `.dtypes`.
+   * Corriger les types de données lorsque cela est nécessaire.
+   * Convertir et standardiser les dates dans un format approprié.
+2. **Contrôle de la qualité des données :**
+   * Vérifier et supprimer les doublons.
+   * Vérifier la cohérence des types de données.
+   * Identifier et traiter les valeurs manquantes.
+   * Vérifier la cohérence des valeurs lorsque cela est nécessaire.
+   * Sélection des colonnes pertinantes.
+3. **Fusion des données :**
+   * Fusionner les différentes sources de données dans un dataset structuré et cohérent.
+4. **Stockage des données nettoyées :**
+   * Conserver les données nettoyées et structurées dans le répertoire `silver/`.
 
 <!-- ## instructions d'installation et d'exécution -->
 

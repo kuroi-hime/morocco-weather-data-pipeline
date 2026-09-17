@@ -3,3 +3,8 @@
 
 # data files
 bronze/
+silver/
+gold/
+
+# 
+DockerFile

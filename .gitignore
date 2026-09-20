@@ -1,5 +1,6 @@
 # virtual environment
 .venv/
+.env
 
 # data files
 bronze/
@@ -7,4 +8,4 @@ silver/
 gold/
 
 # 
-DockerFile
+docker-compose.yaml
